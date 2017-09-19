@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_learn) {
             //call new activity here
-            return true;
+            Intent launchactivity = new  Intent(MainActivity.this, LearnMore.class);
+            MainActivity.this.startActivity(launchactivity);
         }
 
         return super.onOptionsItemSelected(item);
